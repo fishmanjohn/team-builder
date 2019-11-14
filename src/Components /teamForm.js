@@ -12,13 +12,13 @@ function TeamForm(props){
     const submitForm = e => {
       e.preventDefault();
       props.addNewMember(member);
-      setMember({ name: "", email: "" ,role: ""});
+      setMember({name:"", email:"" ,role:""});
     };
 
 
     return(
         <div>
-            <form >
+            <form onSubmit ={submitForm} >
       <label htmlFor="name">Name</label>
       <input
         id="name"

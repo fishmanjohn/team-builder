@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.cardGrid{
+  width:100%;
+margin:100px 0%;
+display:flex;
+flex-wrap: wrap;
+align-items:center;
+justify-content:space-evenly;
+}
+
+.teamCard{
+  width: 45%;
+  height: 250px;
+  text-align: center;
+  border: 3px solid black;
+}

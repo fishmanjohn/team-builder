@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import TeamForm from './Components /teamForm';
 import TeamCard from './Components /teamCard';
+import {CardGrid} from './Components /cardGrid';
 
 function App() {
 
@@ -19,13 +20,15 @@ function App() {
       email: member.email,
       role: member.role
     };
-    setTeamMember([...member, newMember]);
+    setTeamMember([...teamMember, newMember]);
+    
   };
+  console.log(teamMember)
   return (
     <div>
      <h1>My Team.</h1>
       <TeamForm addNewMember={addNewMember}/>
-      <TeamCard teamMember={teamMember}/>
+      <CardGrid teamMember={teamMember}/>
     </div>
   );
 }
